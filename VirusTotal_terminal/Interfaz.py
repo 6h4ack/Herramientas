@@ -124,8 +124,6 @@ class apiVirusTotal():
         #label2.pack_forget()
         vt = apiVirusTotal()
         #DEBEMOS COMPROBAR EN LA BASE DE DATOS LOCAL SI EL MD5 QUE ESTAMOS BUSCANDO YA ESTÁ ALMACENADO
-        # Me ha vuelto loco encontrar el fallo porque no encontraba el resultado, resulta que cuando se introducen los datos, las letras del md5 se pasan a minúsculas
-        # De modo que no encontraba el resultado en la consulta, para ello pasamos el md5 que recogemos de la funcion a minúsculas con .lower()
         cursor.execute("""SELECT COUNT(*) FROM amenazas WHERE md5=?""",(md5.lower(),))
         amenaza = cursor.fetchone()
         # Si el resultado de la consulta nos devuelve el valor "0" significará que este valor no se encuentra almacenado en la base de datos local
