@@ -40,7 +40,7 @@ global name, var, var1, direccionFichero
 
 class mensajes():
     def inicio(self):
-        print ("Bienvenido al TFM de Gonzalo Aguilar")
+        print ("Bienvenido/a)
         #MOSTRAMOS EL NUMERO DE MD5 QUE POSEE ALMACENADA NUESTRA BD LOCAL
         cursor.execute("""SELECT COUNT(*) FROM amenazas""")
         amenaza = cursor.fetchone()
