@@ -1,3 +1,0 @@
-<script>alert('XSS')</script>
-<SCript>alert('XSS')</SCript>
-<scri<script>pt>alert('xss')</scri</script>pt>
